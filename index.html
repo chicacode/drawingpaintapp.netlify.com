@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--ROOT-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--TITLE-->
+    <title>Paint Application</title>
+</head>
+<!--BODY-->
+
+<body>
+
+    <div id="toolbar">
+        <div id="logo"><img src="GERI'S%20PAINT%20LOGO.png" width="80px"></div>
+        <div id="colors">Pick a Color:<input type="color" value="#ffff00" name="myColor" id="myColor"></div>
+        <div id="range">Size: 1<input type="range" id="myRange" value="10" min="1" max="100">100</div>
+        <button id="brush"><img src="Images/Tools/8.png" width="20px"></button>
+        <button id="erased"><img src="Images/Tools/3.png" width="20px"></button>
+        <a href="#" id="saveLink"><button id="saved">Save</button></a>
+        <button id="reset">Reset</button>
+        <div id="input">
+            <label for="">X1</label> <input type="number" value="0" id="x1">
+            <label for="">Y1</label> <input type="number" value="0" id="y1">
+            <label for="">X2</label> <input type="number" value="0" id="x2">
+            <label for="">Y2</label> <input type="number" value="0" id="y2">
+            <button onclick="line(x1.value, y1.value,x2.value,y2.value)">Draw a line</button>
+        </div>
+    </div>
+
+    <canvas id="canvas">Your browser does not support</canvas>
+
+    <!--SCRIPT-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
